@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:gravity="top|center"
+
+    tools:context="com.example.risbo.puppyviewer.PuppyActivity">
+
+    <TextView
+        android:id="@+id/helloworld"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textSize="40dp"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/puppy_spinner"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </Spinner>
+
+        <Button
+            android:id="@+id/clickme"
+            android:text="Click me!"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clickMeClick"
+            />
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/puppyphoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>
